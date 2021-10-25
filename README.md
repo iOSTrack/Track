@@ -78,4 +78,5 @@ Track is a time management tool that helps you plan your week. It allows you to 
 * Settings
    * Edit user name, email and password
 ## Wireframes
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![CodePath-Track_App_Sketches](https://user-images.githubusercontent.com/72041087/138780466-6bf77f55-da4f-43ee-9215-fab6980b8014.jpg)
+
