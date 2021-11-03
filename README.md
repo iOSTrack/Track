@@ -80,3 +80,54 @@ Track is a time management tool that helps you plan your week. It allows you to 
 ## Wireframes
 ![CodePath-Track_App_Sketches](https://user-images.githubusercontent.com/72041087/138780466-6bf77f55-da4f-43ee-9215-fab6980b8014.jpg)
 
+## Schema
+### Models
+#### User
+| Property | Type | Description |
+|----------|------|-------------|
+| email | String | User email |
+| password | String | User password |
+| firstName | String | User first name |
+| lastName | String | User last name |
+| tasks | Pointer to Task | Users tasks |
+| events | Pointer to Events | Users events |
+| notificationFreq | Int | Frequency user wants to recieve reminders (weekly) |
+
+#### Tasks
+| Property | Type | Description |
+|----------|------|-------------|
+| tasks | Array | User tasks |
+| author | Pointer to User | Task author |
+
+#### Events
+| Property | Type | Description |
+|----------|------|-------------|
+| events | Array | User events |
+| author | Pointer to User | Event author |
+
+#### Task
+| Property | Type | Description |
+|----------|------|-------------|
+| taskDueDate | DateTime | Task due date |
+| taskDeliverable | String | What is due for the task |
+| taskEstTime | DateTime | Estimated time to complete deliverable |
+| isCompleted | Bool | If task is completed or not |
+
+#### Event
+| Property | Type | Description |
+|----------|------|-------------|
+| eventStart | DateTime | Event start |
+| eventEnd | DateTime | Event end |
+| eventTitle | String | Event title/description |
+
+### Networking
+#### Login/Register
+* [CREATE] user profile
+* [POST] login with credentials
+
+#### Calendar
+* [GET] events and tasks
+* [POST] create and send events and tasks
+
+#### Track
+* [GET] get total tasks
