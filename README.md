@@ -89,25 +89,12 @@ Track is a time management tool that helps you plan your week. It allows you to 
 | password | String | User password |
 | firstName | String | User first name |
 | lastName | String | User last name |
-| tasks | Pointer to Task | Users tasks |
-| events | Pointer to Events | Users events |
 | notificationFreq | Int | Frequency user wants to recieve reminders (weekly) |
-
-#### Tasks
-| Property | Type | Description |
-|----------|------|-------------|
-| tasks | Array | User tasks |
-| author | Pointer to User | Task author |
-
-#### Events
-| Property | Type | Description |
-|----------|------|-------------|
-| events | Array | User events |
-| author | Pointer to User | Event author |
 
 #### Task
 | Property | Type | Description |
 |----------|------|-------------|
+| userId | Pointer to User | Identify task owner
 | taskDueDate | DateTime | Task due date |
 | taskDeliverable | String | What is due for the task |
 | taskEstTime | DateTime | Estimated time to complete deliverable |
@@ -116,6 +103,7 @@ Track is a time management tool that helps you plan your week. It allows you to 
 #### Event
 | Property | Type | Description |
 |----------|------|-------------|
+| userId | Pointer to User | Identify event owner
 | eventStart | DateTime | Event start |
 | eventEnd | DateTime | Event end |
 | eventTitle | String | Event title/description |
