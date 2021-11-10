@@ -24,9 +24,10 @@ Track is a time management tool that helps you plan your week. It allows you to 
 
 **Required Must-have Stories**
 
-* User logins to calendar view of all of their tasks/events
-* User can add and remove tasks
-* Progress view that shows weekly progress and tracks points earned
+[x] User can log in or register
+[] User logins to calendar view of all of their tasks/events
+[] User can add and remove tasks
+[] Progress view that shows weekly progress and tracks points earned
 
 **Optional Nice-to-have Stories**
 
