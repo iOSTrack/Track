@@ -125,3 +125,4 @@ Track is a time management tool that helps you plan your week. It allows you to 
 ### Sprint 1
 - Created database and Xcode project that can connect to database
 <img width="1498" alt="Screen Shot 2021-11-07 at 7 19 24 PM" src="https://user-images.githubusercontent.com/72041087/140667630-b2e69635-7e6a-4768-b494-f28b1f1a4880.png">
+<img src="https://user-images.githubusercontent.com/72041087/141032643-6e8fe4ad-7e76-4cfe-9c73-dd169819763e.gif" width=250><br>
