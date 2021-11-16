@@ -25,7 +25,7 @@ Track is a time management tool that helps you plan your week. It allows you to 
 **Required Must-have Stories**
 
 * [x] User can log in or register
-* [ ] User can use Pomodoro timer
+* [x] User can use Pomodoro timer
 * [ ] User logins to calendar view of all of their tasks/events
 * [ ] User can add and remove tasks
 * [ ] Progress view that shows weekly progress and how many tasks/events are done
@@ -127,3 +127,11 @@ Track is a time management tool that helps you plan your week. It allows you to 
 - Created database and Xcode project that can connect to database
 <img width="1498" alt="Screen Shot 2021-11-07 at 7 19 24 PM" src="https://user-images.githubusercontent.com/72041087/140667630-b2e69635-7e6a-4768-b494-f28b1f1a4880.png">
 <img src="https://user-images.githubusercontent.com/72041087/141032643-6e8fe4ad-7e76-4cfe-9c73-dd169819763e.gif" width=250><br>
+
+### Sprint 2
+- User can sign up and login with their details
+- User can select between Pomodoro sessions
+<img src="https://user-images.githubusercontent.com/72041087/141873773-97a05a83-a7e3-47f8-8f3a-a1c0700a85ff.gif">
+<img src="https://user-images.githubusercontent.com/72041087/141874069-0d09b614-8346-43a1-be9b-cd038cc07a1f.gif" width=250><br>
+
+
