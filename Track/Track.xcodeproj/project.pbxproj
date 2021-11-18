@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1BCC19274706EC00ACFE75 /* Pomodoro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BCC18274706EB00ACFE75 /* Pomodoro.storyboard */; };
 		0E6EB13527385B650053B865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13427385B650053B865 /* AppDelegate.swift */; };
 		0E6EB13727385B650053B865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13627385B650053B865 /* SceneDelegate.swift */; };
 		0E6EB13927385B650053B865 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13827385B650053B865 /* PomodoroViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1BCC18274706EB00ACFE75 /* Pomodoro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pomodoro.storyboard; sourceTree = SOURCE_ROOT; };
 		0E6EB13127385B650053B865 /* Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6EB13427385B650053B865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6EB13627385B650053B865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		0E6EB13327385B650053B865 /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				0E1BCC18274706EB00ACFE75 /* Pomodoro.storyboard */,
 				0E6EB13427385B650053B865 /* AppDelegate.swift */,
 				0E6EB13627385B650053B865 /* SceneDelegate.swift */,
 				0E6EB13827385B650053B865 /* PomodoroViewController.swift */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6EB14127385B690053B865 /* LaunchScreen.storyboard in Resources */,
+				0E1BCC19274706EC00ACFE75 /* Pomodoro.storyboard in Resources */,
 				0E6EB13E27385B690053B865 /* Assets.xcassets in Resources */,
 				0E6EB13C27385B650053B865 /* Main.storyboard in Resources */,
 			);
