@@ -26,7 +26,7 @@ Track is a time management tool that helps you plan your week. It allows you to 
 
 * [x] User can log in or register
 * [x] User can use Pomodoro timer
-* [ ] User logins to calendar view of all of their tasks/events
+* [x] User logins to calendar view of all of their tasks/events
 * [ ] User can add and remove tasks
 * [ ] Progress view that shows weekly progress and how many tasks/events are done
 
@@ -134,4 +134,6 @@ Track is a time management tool that helps you plan your week. It allows you to 
 <img src="https://user-images.githubusercontent.com/72041087/141873773-97a05a83-a7e3-47f8-8f3a-a1c0700a85ff.gif">
 <img src="https://user-images.githubusercontent.com/72041087/141874069-0d09b614-8346-43a1-be9b-cd038cc07a1f.gif" width=250><br>
 
-
+### Sprint 3
+- User can login and view Calendar, Track, and Pomodoro screens
+<img src="https://user-images.githubusercontent.com/72041087/143152338-be5f8398-50eb-403e-a203-4bceb549c1f5.gif" width=250>
