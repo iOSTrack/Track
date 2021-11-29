@@ -17,13 +17,14 @@ class TrackViewController: UIViewController {
     
     var tasksCompleted = 0
     var loadedTasks = [PFObject]()
+    var pastPercentage: CGFloat = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         queryTasks()
-        trackView.drawTrack(percentComplete: 0.0)
+        let grayTrack = trackView.createTrack(percentStart: 0.0, percentComplete: 1.0, color: UIColor.systemGray5.cgColor)
+        trackView.layer.addSublayer(grayTrack)
     }
-    
     @IBAction func refreshTrack(_ sender: Any) {
         queryTasks()
     }
@@ -48,7 +49,12 @@ class TrackViewController: UIViewController {
                 }
                 
                 if(self.loadedTasks.count != 0){
-                    self.trackView.drawTrack(percentComplete: CGFloat(self.tasksCompleted) / CGFloat(self.loadedTasks.count))
+                    // If red track is drawn on the screen already, remove it
+                    if(self.trackView.layer.sublayers?.count == 9){
+                        self.trackView.layer.sublayers?.popLast()
+                    }
+                    self.trackView.drawTrack(percentStart: 0.0, percentComplete: CGFloat(self.tasksCompleted) / CGFloat(self.loadedTasks.count))
+                    self.pastPercentage = CGFloat(self.tasksCompleted) / CGFloat(self.loadedTasks.count)
                 }
                 self.totalDeliverablesLabel.text = String(self.loadedTasks.count)
                 self.completedLabel.text = String(self.tasksCompleted)

@@ -89,7 +89,7 @@
                                     <segue destination="b7I-At-1xV" kind="presentation" id="CQ0-Gr-esq"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Refresh" id="9ZV-V9-KVB">
+                            <barButtonItem image="arrow.clockwise" catalog="system" id="9ZV-V9-KVB">
                                 <connections>
                                     <action selector="refreshTrack:" destination="Y6W-OH-hqX" id="AZy-nu-hyQ"/>
                                 </connections>
@@ -136,6 +136,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="gear" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">

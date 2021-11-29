@@ -27,7 +27,7 @@ extension CGFloat {
         super.init(coder: aDecoder)
     }
     
-    func createTrack(percentComplete: CGFloat, color: CGColor) -> CAShapeLayer {
+    func createTrack(percentStart: CGFloat, percentComplete: CGFloat, color: CGColor) -> CAShapeLayer {
         let layer = CAShapeLayer()
         let lineWidth:CGFloat = 40.0
         
@@ -35,17 +35,23 @@ extension CGFloat {
         
         layer.strokeColor = color
         layer.fillColor = nil
-        layer.strokeStart = 0
+        layer.strokeStart = percentStart
         layer.strokeEnd = percentComplete
         layer.lineCap = .round
         layer.lineWidth = lineWidth
+        
+        // Animate stroke
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0
+        animation.toValue = percentComplete
+        animation.duration = 0.7
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        layer.add(animation, forKey: "line")
         return layer
     }
     
-    func drawTrack(percentComplete: CGFloat){
-        let grayTrack = createTrack(percentComplete: 1.0, color: UIColor.systemGray5.cgColor)
-        self.layer.addSublayer(grayTrack)
-        let redTrack = createTrack(percentComplete: percentComplete, color: UIColor(red: 1.00, green: 0.33, blue: 0.29, alpha: 1.00).cgColor)
+    func drawTrack(percentStart:CGFloat, percentComplete: CGFloat){
+        let redTrack = createTrack(percentStart: percentStart, percentComplete: percentComplete, color: UIColor(red: 1.00, green: 0.33, blue: 0.29, alpha: 1.00).cgColor)
         self.layer.addSublayer(redTrack)
     }
     
