@@ -13,6 +13,8 @@ import AudioToolbox
 
 class PomodoroViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -58,12 +60,14 @@ class PomodoroViewController: UIViewController {
             isTimerRunning = false
             self.resumeTapped = true
             self.pauseButton.setTitle("RESUME", for: .normal)
+            pauseButton.setTitleColor(UIColor .white, for: .normal)
         }
         else {
             runTimer()
             self.resumeTapped = false
             isTimerRunning = true
             self.pauseButton.setTitle("PAUSE", for: .normal)
+            pauseButton.setTitleColor(UIColor .white, for: .normal)
         }
     }
     
