@@ -25,6 +25,10 @@
 		521EFFD9273B39F00049E5F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EFFD8273B39F00049E5F0 /* LoginViewController.swift */; };
 		521EFFDD273B45350049E5F0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521EFFDC273B45350049E5F0 /* SignUpViewController.swift */; };
 		9109CD2FCB0CCACB3E160BEB /* Pods_Track.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56135FFA2F730DE73EA2D800 /* Pods_Track.framework */; };
+		984EC6CE27520E0500AAC00D /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984EC6CD27520E0500AAC00D /* EventEditViewController.swift */; };
+		984EC6D027520E5000AAC00D /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984EC6CF27520E5000AAC00D /* EventTableViewCell.swift */; };
+		984EC6D22752105F00AAC00D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984EC6D12752105F00AAC00D /* Event.swift */; };
+		98AEF783274CA44E005FC989 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEF782274CA44E005FC989 /* WeeklyViewController.swift */; };
 		98C31F282743794F00AAFD51 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C31F272743794F00AAFD51 /* CalendarCell.swift */; };
 		98C31F29274385D000AAFD51 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13827385B650053B865 /* PomodoroViewController.swift */; };
 		98C31F2B2743900C00AAFD51 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C31F2A2743900C00AAFD51 /* CalendarHelper.swift */; };
@@ -53,6 +57,10 @@
 		521EFFDC273B45350049E5F0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		56135FFA2F730DE73EA2D800 /* Pods_Track.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Track.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B310286D15F4E36CD097E06 /* Pods-Track.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Track.release.xcconfig"; path = "Target Support Files/Pods-Track/Pods-Track.release.xcconfig"; sourceTree = "<group>"; };
+		984EC6CD27520E0500AAC00D /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		984EC6CF27520E5000AAC00D /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		984EC6D12752105F00AAC00D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		98AEF782274CA44E005FC989 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 		98C31F272743794F00AAFD51 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		98C31F2A2743900C00AAFD51 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,10 +112,14 @@
 				521EFFD8273B39F00049E5F0 /* LoginViewController.swift */,
 				0E6EB13827385B650053B865 /* PomodoroViewController.swift */,
 				0E1BCC1A27470CD500ACFE75 /* CalendarViewController.swift */,
-				98C31F2A2743900C00AAFD51 /* CalendarHelper.swift */,
+				98AEF782274CA44E005FC989 /* WeeklyViewController.swift */,
+				984EC6CD27520E0500AAC00D /* EventEditViewController.swift */,
 				98C31F272743794F00AAFD51 /* CalendarCell.swift */,
 				0E1BCC1F274B5F6800ACFE75 /* TrackViewController.swift */,
 				0E1BCC21274B6F3B00ACFE75 /* TrackOvalView.swift */,
+				984EC6CF27520E5000AAC00D /* EventTableViewCell.swift */,
+				98C31F2A2743900C00AAFD51 /* CalendarHelper.swift */,
+				984EC6D12752105F00AAC00D /* Event.swift */,
 				0E6EB13D27385B690053B865 /* Assets.xcassets */,
 				0E6EB14227385B690053B865 /* Info.plist */,
 			);
@@ -255,13 +267,17 @@
 				98C31F2B2743900C00AAFD51 /* CalendarHelper.swift in Sources */,
 				98C31F29274385D000AAFD51 /* PomodoroViewController.swift in Sources */,
 				98C31F282743794F00AAFD51 /* CalendarCell.swift in Sources */,
+				984EC6D027520E5000AAC00D /* EventTableViewCell.swift in Sources */,
 				521EFFD9273B39F00049E5F0 /* LoginViewController.swift in Sources */,
 				0E6EB13927385B650053B865 /* PomodoroViewController.swift in Sources */,
 				0E6EB13527385B650053B865 /* AppDelegate.swift in Sources */,
 				0E1BCC20274B5F6800ACFE75 /* TrackViewController.swift in Sources */,
 				0E1BCC22274B6F3B00ACFE75 /* TrackOvalView.swift in Sources */,
+				984EC6CE27520E0500AAC00D /* EventEditViewController.swift in Sources */,
+				98AEF783274CA44E005FC989 /* WeeklyViewController.swift in Sources */,
 				0E6EB13727385B650053B865 /* SceneDelegate.swift in Sources */,
 				521EFFDD273B45350049E5F0 /* SignUpViewController.swift in Sources */,
+				984EC6D22752105F00AAC00D /* Event.swift in Sources */,
 				0E1BCC0E2745D39200ACFE75 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
