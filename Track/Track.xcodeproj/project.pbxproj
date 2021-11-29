@@ -14,6 +14,8 @@
 		0E1BCC19274706EC00ACFE75 /* Pomodoro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BCC18274706EB00ACFE75 /* Pomodoro.storyboard */; };
 		0E1BCC1B27470CD500ACFE75 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BCC1A27470CD500ACFE75 /* CalendarViewController.swift */; };
 		0E1BCC1E2747135C00ACFE75 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BCC1C2747135C00ACFE75 /* Settings.storyboard */; };
+		0E1BCC20274B5F6800ACFE75 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BCC1F274B5F6800ACFE75 /* TrackViewController.swift */; };
+		0E1BCC22274B6F3B00ACFE75 /* TrackOvalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BCC21274B6F3B00ACFE75 /* TrackOvalView.swift */; };
 		0E6EB13527385B650053B865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13427385B650053B865 /* AppDelegate.swift */; };
 		0E6EB13727385B650053B865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13627385B650053B865 /* SceneDelegate.swift */; };
 		0E6EB13927385B650053B865 /* PomodoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EB13827385B650053B865 /* PomodoroViewController.swift */; };
@@ -36,6 +38,8 @@
 		0E1BCC18274706EB00ACFE75 /* Pomodoro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pomodoro.storyboard; sourceTree = SOURCE_ROOT; };
 		0E1BCC1A27470CD500ACFE75 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		0E1BCC1D2747135C00ACFE75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		0E1BCC1F274B5F6800ACFE75 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		0E1BCC21274B6F3B00ACFE75 /* TrackOvalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOvalView.swift; sourceTree = "<group>"; };
 		0E6EB13127385B650053B865 /* Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6EB13427385B650053B865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6EB13627385B650053B865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				0E1BCC1A27470CD500ACFE75 /* CalendarViewController.swift */,
 				98C31F2A2743900C00AAFD51 /* CalendarHelper.swift */,
 				98C31F272743794F00AAFD51 /* CalendarCell.swift */,
+				0E1BCC1F274B5F6800ACFE75 /* TrackViewController.swift */,
+				0E1BCC21274B6F3B00ACFE75 /* TrackOvalView.swift */,
 				0E6EB13D27385B690053B865 /* Assets.xcassets */,
 				0E6EB14227385B690053B865 /* Info.plist */,
 			);
@@ -252,6 +258,8 @@
 				521EFFD9273B39F00049E5F0 /* LoginViewController.swift in Sources */,
 				0E6EB13927385B650053B865 /* PomodoroViewController.swift in Sources */,
 				0E6EB13527385B650053B865 /* AppDelegate.swift in Sources */,
+				0E1BCC20274B5F6800ACFE75 /* TrackViewController.swift in Sources */,
+				0E1BCC22274B6F3B00ACFE75 /* TrackOvalView.swift in Sources */,
 				0E6EB13727385B650053B865 /* SceneDelegate.swift in Sources */,
 				521EFFDD273B45350049E5F0 /* SignUpViewController.swift in Sources */,
 				0E1BCC0E2745D39200ACFE75 /* MainViewController.swift in Sources */,
