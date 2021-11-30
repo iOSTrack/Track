@@ -27,6 +27,8 @@ class SignUpViewController: UIViewController {
         user["firstName"] = FirstNameField.text
         user["lastName"] = LastNameField.text
         user.signUpInBackground()
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     
