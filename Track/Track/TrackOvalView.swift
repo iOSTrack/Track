@@ -15,7 +15,7 @@ extension CGFloat {
     }
 }
 
-@IBDesignable class TrackOvalView: UIView {
+class TrackOvalView: UIView {
 
     var path: UIBezierPath!
      
