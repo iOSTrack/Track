@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CalendarViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -14,6 +15,7 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var CollectionView: UICollectionView!
     
     var totalSquares = [String]()
+    var loadedTasks = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +58,30 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
+        
         cell.dayOfMonth.text = totalSquares[indexPath.item]
+        if(totalSquares[indexPath.item] == "16"){
+            cell.taskCircle.isHidden = false
+        }
+        else {
+            cell.taskCircle.isHidden = true
+        }
+
+        // TODO Make circles appear for proper months and not for every month
+//        let query = PFQuery(className: "Task")
+//        query.whereKey("dateNum", equalTo: totalSquares[indexPath.item])
+//
+//        do{
+//            let results = try query.findObjects()
+//
+//            if(results.count > 0){
+//                print("a")
+//            }
+//        }
+//        catch{
+//            print(Error.self)
+//        }
+
         return cell
     }
     

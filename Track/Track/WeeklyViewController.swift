@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 var selectedDate = Date()
 
@@ -20,6 +21,18 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        eventsList = []
+        let query = PFQuery(className:"Task")
+        query.findObjectsInBackground { (results: [PFObject]?, error: Error?) in
+            for result in results ?? []{
+                let newEvent = Event()
+                
+                newEvent.id = eventsList.count
+                newEvent.name = result["taskDeliverable"] as! String
+                newEvent.date = result["dueDate"] as! Date
+                eventsList.append(newEvent)
+            }
+        }
         setCellsView()
         setWeekView()
     }
@@ -57,6 +70,12 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let date = totalSquares[indexPath.item]
         cell.dayOfMonth.text = String(CalendarHelper().dayOfMonth(date: date))
+        if(String(CalendarHelper().dayOfMonth(date: date)) == "16"){
+            cell.taskCircle.isHidden = false
+        }
+        else {
+            cell.taskCircle.isHidden = true
+        }
         
         if (date == selectedDate){
             cell.backgroundColor = UIColor.systemOrange

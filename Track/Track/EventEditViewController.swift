@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class EventEditViewController: UIViewController {
     
@@ -21,6 +22,22 @@ class EventEditViewController: UIViewController {
     }
     
     @IBAction func saveAction(_ sender: Any) {
+        var newTask = PFObject(className:"Task")
+        
+        // TODO Fix user id
+        newTask["taskDeliverable"] = nameTextField.text
+        newTask["dueDate"] = datePicker.date
+        newTask["isCompleted"] = false
+        
+        newTask.saveInBackground {
+          (success: Bool, error: Error?) in
+          if (success) {
+            print("Task saved")
+          } else {
+            print(error)
+          }
+        }
+        
         let newEvent = Event()
         newEvent.id = eventsList.count
         newEvent.name = nameTextField.text
