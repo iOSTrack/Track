@@ -50,6 +50,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="cR0-2L-qOq" kind="relationship" relationship="viewControllers" id="QKU-RX-0fG"/>
                         <segue destination="0hb-1V-vhu" kind="relationship" relationship="viewControllers" id="vqK-IP-ejG"/>
